@@ -23,7 +23,7 @@ class Screen extends React.Component {
     }
 
     loginWithFacebook = async () => {
-        const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync(
+        const { type, token } = await Facebook.logInWithReadPermissionsAsync(
             '449579609085368',
             { permissions: ['email', 'public_profile'] }
         );
